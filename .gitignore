@@ -1,0 +1,31 @@
+# Virtual environment
+.venv/
+venv/
+ENV/
+env/
+
+# Environment variables (keeps your API keys safe!)
+.env
+
+# Python cache
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary and output files
+**/temp/
+**/temp_uploaded_files/
+**/uploaded_files/
+my_resume_match_project/extracted_job_details.json
+my_resume_match_project/extracted_resume_details.json
+my_resume_match_project/match_report.json
+my_resume_match_project/job_requirements_output.json
+my_resume_match_project/match_analytics_output_with_llm.json
+my_resume_match_project/resume_details_output.json
+final_rag_approach/temp/
+
+# IDE files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
