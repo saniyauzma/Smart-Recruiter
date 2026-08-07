@@ -1,0 +1,12 @@
+# Test YouTube Video Links for Candidate RAG System
+
+Here are some good mock interview links to test the RAG system transcription and analysis:
+
+1. Mock Job Interview (Short, highly relevant):
+   https://www.youtube.com/watch?v=1qw5ITr3k9E
+
+2. Google Mock Coding Interview (Classic engineering style):
+   https://www.youtube.com/watch?v=XKu_SEDAykw
+
+3. Standard HR Candidate Interview:
+   https://www.youtube.com/watch?v=5v-wyR5emRw
