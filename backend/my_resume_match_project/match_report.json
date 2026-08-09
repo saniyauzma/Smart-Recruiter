@@ -1,0 +1,8 @@
+{
+    "skills_match_percentage": 10.0,
+    "experience_match_percentage": 0.0,
+    "education_match_percentage": 70.0,
+    "technologies_match_percentage": 5.0,
+    "overall_match_score": 18.5,
+    "analysis": "The candidate has some basic relevant skills and a somewhat relevant educational background but lacks most of the specific skills, experience, and technologies required for the job, resulting in a low overall match score."
+}
