@@ -29,3 +29,8 @@ final_rag_approach/temp/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Frontend Dependencies
+node_modules/
+dist/
+.env.local
