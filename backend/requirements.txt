@@ -1,0 +1,16 @@
+httpx
+python-dotenv
+assemblyai
+langchain
+langchain-community
+langchain-cohere
+langchain-core
+langchain-groq
+chromadb
+streamlit
+llama-parse
+llama-index
+fastapi
+uvicorn
+python-multipart
+youtube-transcript-api
