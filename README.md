@@ -4,6 +4,14 @@ An intelligent system for automating resume-to-job-description matching and anal
 
 ---
 
+## 🚀 Deployed Applications
+
+- **Frontend Client (Vercel)**: https://smart-recruiter-ai.vercel.app
+- **Backend API (Render)**: https://smart-recruiter-n4m8.onrender.com
+- **API Documentation (Swagger)**: https://smart-recruiter-n4m8.onrender.com/docs
+
+---
+
 ## 📋 Project Overview
 
 This project consists of two main components:
@@ -157,33 +165,30 @@ curl -X POST "http://localhost:8000/match" \
 ## 📁 Project Structure
 
 ```
-dhiwise_project/
+Smart-Recruiter/
 ├── README.md                           # This file
-├── requirements.txt                    # Python dependencies
-├── .env                               # Environment variables (not in repo)
-├── sample_resume.txt                  # Sample test file
+├── .env                                # Environment variables (not in repo)
 │
-├── my_resume_match_project/           # FastAPI Resume Matcher
-│   ├── app.py                        # Main FastAPI application
-│   ├── jd_parser.py                  # Job description parser
-│   ├── resume_parser.py              # Resume parser
-│   ├── matched_score.py              # Match scoring logic
-│   ├── main.py                       # Standalone runner
-│   ├── requirements.txt              # Component dependencies
-│   ├── extracted_job_details.json    # Output: parsed job data
-│   ├── extracted_resume_details.json # Output: parsed resume data
-│   ├── match_report.json             # Output: final match report
-│   └── temp_uploaded_files/          # Temporary file storage
+├── backend/                            # FastAPI Backend (Render)
+│   ├── api.py                          # Main FastAPI application & endpoints
+│   ├── requirements.txt                # Backend dependencies
+│   ├── my_resume_match_project/        # Resume Matcher module
+│   │   ├── jd_parser.py                # Job description parser
+│   │   ├── resume_parser.py            # Resume parser
+│   │   └── matched_score.py            # Match scoring logic
+│   └── final_rag_approach/             # RAG Interview Analyzer module
+│       ├── embeddings.py               # Embedding creation
+│       ├── similarity.py               # Semantic similarity search
+│       └── traanscriber.py             # Transcription handler
 │
-├── final_rag_approach/               # Streamlit RAG Interview Analyzer
-│   ├── app.py                        # Streamlit web application
-│   ├── main.py                       # Standalone runner
-│   ├── embeddings.py                 # Embedding creation
-│   ├── similarity.py                 # Semantic similarity search
-│   ├── traanscriber.py              # Transcription handler
-│   └── temp/                         # Temporary files
-│
-└── parse.py                          # Utility parsing functions
+└── frontend/                           # React + Vite Frontend (Vercel)
+    ├── package.json                    # Frontend dependencies
+    ├── index.html                      # App entry point
+    ├── vite.config.js                  # Vite configuration
+    └── src/
+        ├── App.jsx                     # Main React component & UI
+        ├── index.css                   # Global styling & glassmorphism
+        └── main.jsx                    # React entry point
 ```
 
 ---
