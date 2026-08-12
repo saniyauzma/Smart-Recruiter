@@ -12,7 +12,16 @@ import {
   Loader2,
   Phone,
   Mail,
-  User
+  User,
+  X,
+  FileText,
+  Github,
+  Twitter,
+  Linkedin,
+  ChevronRight,
+  BrainCircuit,
+  Database,
+  Code
 } from 'lucide-react';
 
 const API_BASE = 'https://smart-recruiter-n4m8.onrender.com';
@@ -114,16 +123,37 @@ export default function App() {
 
   return (
     <div className="app-container">
-      {/* Background shapes */}
+      {/* Background shapes & noise */}
+      <div className="bg-grid"></div>
+      <div className="bg-noise"></div>
       <div className="glow-blur shape-1"></div>
       <div className="glow-blur shape-2"></div>
+      <div className="glow-blur shape-3"></div>
+
+      {/* Navbar */}
+      <nav className="top-nav">
+        <div className="nav-logo" onClick={goHome}>
+          <Sparkles className="logo-icon" size={24} />
+          <span className="logo-text">Smart Recruiter</span>
+        </div>
+        <div className="nav-links">
+          <span className="badge-pill"><BrainCircuit size={14}/> Powered by AI</span>
+        </div>
+      </nav>
+
+      <main className="main-content">
 
       {/* --- 1. LANDING PAGE --- */}
       {page === 'landing' && (
-        <div className="landing-screen fade-in">
+        <div className="landing-screen fade-in-stagger">
           <header className="hero-section">
-            <h1 className="main-title">Smart Recruiter</h1>
-            <p className="main-subtitle">AI-Driven Recruiting Pipeline & Candidate Diagnostics</p>
+            <div className="tech-stack-badges fade-in-up">
+              <span className="tech-badge"><Code size={14}/> Groq</span>
+              <span className="tech-badge"><BrainCircuit size={14}/> LangChain</span>
+              <span className="tech-badge"><Database size={14}/> ChromaDB</span>
+            </div>
+            <h1 className="main-title reveal-text">Smart Recruiter</h1>
+            <p className="main-subtitle typing-effect">AI-Driven Recruiting Pipeline & Candidate Diagnostics</p>
           </header>
 
           <div className="cards-grid">
@@ -219,7 +249,13 @@ export default function App() {
                 </label>
                 {jdFiles.length > 0 && (
                   <div className="file-list">
-                    {jdFiles.map((f, i) => <div key={i} className="file-item">{f.name}</div>)}
+                    {jdFiles.map((f, i) => (
+                      <div key={i} className="file-item">
+                        <FileText size={16} className="file-icon" />
+                        <span className="file-name">{f.name}</span>
+                        <X size={16} className="file-remove" />
+                      </div>
+                    ))}
                   </div>
                 )}
               </div>
@@ -237,7 +273,13 @@ export default function App() {
                 </label>
                 {resumeFiles.length > 0 && (
                   <div className="file-list">
-                    {resumeFiles.map((f, i) => <div key={i} className="file-item">{f.name}</div>)}
+                    {resumeFiles.map((f, i) => (
+                      <div key={i} className="file-item">
+                        <FileText size={16} className="file-icon" />
+                        <span className="file-name">{f.name}</span>
+                        <X size={16} className="file-remove" />
+                      </div>
+                    ))}
                   </div>
                 )}
               </div>
@@ -354,7 +396,11 @@ export default function App() {
                 </label>
                 {interviewFile && (
                   <div className="file-list">
-                    <div className="file-item">{interviewFile.name}</div>
+                    <div className="file-item">
+                      <FileText size={16} className="file-icon" />
+                      <span className="file-name">{interviewFile.name}</span>
+                      <X size={16} className="file-remove" />
+                    </div>
                   </div>
                 )}
               </div>
@@ -393,6 +439,23 @@ export default function App() {
           )}
         </div>
       )}
+      </main>
+
+      {/* Footer */}
+      <footer className="app-footer">
+        <div className="footer-content">
+          <div className="footer-brand">
+            <Sparkles className="logo-icon" size={20} />
+            <span className="logo-text">Smart Recruiter</span>
+          </div>
+          <p className="footer-copy">© 2026 Smart Recruiter. All rights reserved.</p>
+          <div className="footer-socials">
+            <Github size={18} />
+            <Twitter size={18} />
+            <Linkedin size={18} />
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
