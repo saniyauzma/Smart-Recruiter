@@ -22,7 +22,6 @@ my_resume_match_project/match_report.json
 my_resume_match_project/job_requirements_output.json
 my_resume_match_project/match_analytics_output_with_llm.json
 my_resume_match_project/resume_details_output.json
-final_rag_approach/temp/
 
 # IDE files
 .vscode/
