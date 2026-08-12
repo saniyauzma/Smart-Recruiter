@@ -136,9 +136,6 @@ export default function App() {
           <Sparkles className="logo-icon" size={24} />
           <span className="logo-text">Smart Recruiter</span>
         </div>
-        <div className="nav-links">
-          <span className="badge-pill"><BrainCircuit size={14}/> Powered by AI</span>
-        </div>
       </nav>
 
       <main className="main-content">
@@ -444,16 +441,16 @@ export default function App() {
       {/* Footer */}
       <footer className="app-footer">
         <div className="footer-content">
-          <div className="footer-brand">
-            <Sparkles className="logo-icon" size={20} />
-            <span className="logo-text">Smart Recruiter</span>
+          <p className="footer-built">Built by Saniya Uzma</p>
+          <div className="footer-socials">
+            <a href="https://github.com/saniyauzma" target="_blank" rel="noopener noreferrer" className="social-link">
+              <Github size={18} />
+            </a>
+            <a href="https://www.linkedin.com/in/saniyauzma98765" target="_blank" rel="noopener noreferrer" className="social-link">
+              <Linkedin size={18} />
+            </a>
           </div>
           <p className="footer-copy">© 2026 Smart Recruiter. All rights reserved.</p>
-          <div className="footer-socials">
-            <Github size={18} />
-            <Twitter size={18} />
-            <Linkedin size={18} />
-          </div>
         </div>
       </footer>
     </div>
