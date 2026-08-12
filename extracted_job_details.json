@@ -1,1 +1,58 @@
-[]
+[
+    {
+        "skills": [
+            "Python",
+            "PyTorch",
+            "TensorFlow",
+            "LangChain",
+            "LlamaIndex",
+            "Haystack",
+            "ChromaDB",
+            "Pinecone",
+            "Weaviate",
+            "FAISS",
+            "AWS",
+            "SageMaker",
+            "Lambda",
+            "S3",
+            "GCP",
+            "Vertex AI",
+            "BigQuery",
+            "Docker",
+            "Kubernetes",
+            "CI/CD pipelines",
+            "NLP concepts",
+            "embeddings",
+            "transformers",
+            "attention mechanisms",
+            "SQL",
+            "NoSQL databases",
+            "PostgreSQL",
+            "MongoDB",
+            "problem-solving",
+            "communication skills",
+            "Stable Diffusion",
+            "ComfyUI",
+            "image generation models",
+            "MLflow",
+            "Weights & Biases",
+            "DVC",
+            "Kafka",
+            "Spark Streaming"
+        ],
+        "qualifications": [
+            "B.Tech/M.Tech in Computer Science, AI/ML, or related field"
+        ],
+        "experience_years": "2-4 years",
+        "responsibilities": [
+            "Design, develop, and deploy machine learning models",
+            "Build and maintain scalable data pipelines",
+            "Develop RESTful APIs",
+            "Implement Retrieval-Augmented Generation pipelines",
+            "Fine-tune large language models",
+            "Collaborate with cross-functional teams",
+            "Write clean, well-documented, and testable code",
+            "Monitor model performance in production and retrain models as needed"
+        ]
+    }
+]
