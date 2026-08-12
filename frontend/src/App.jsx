@@ -15,7 +15,7 @@ import {
   User
 } from 'lucide-react';
 
-const API_BASE = `http://${window.location.hostname}:8000`;
+const API_BASE = 'https://smart-recruiter-n4m8.onrender.com';
 
 export default function App() {
   const [page, setPage] = useState('landing'); // landing, matcher, interview
